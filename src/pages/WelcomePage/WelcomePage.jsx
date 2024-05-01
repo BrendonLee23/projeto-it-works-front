@@ -30,7 +30,7 @@ export default function WelcomePage() {
     return (
         <>
             <Container>
-                <Link to="">
+                <Link to="/home">
                     <LogoImage src={LogoMarca} alt="Logo Marca" />
                 </Link>
             </Container>

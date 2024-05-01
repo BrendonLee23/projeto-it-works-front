@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<WelcomePage />}></Route>
-          {/* <Route path="/home" element={<HomePage />}></Route> */}
+          <Route path="/home" element={<HomePage />}></Route>
         </Routes>
       </BrowserRouter>
     </PagesContainer>
