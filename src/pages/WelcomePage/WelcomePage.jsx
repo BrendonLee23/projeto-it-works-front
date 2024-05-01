@@ -1,13 +1,13 @@
 import axios from "axios";
-import { useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import LogoMarca from "../../assets/images/logomarca.png"
 import { Container, LogoImage } from "./WelcomePage-Styles";
 import { Link } from "react-router-dom";
+import DataContext from "../../contexts/DataContext";
 
 export default function WelcomePage() {
 
-    const [data, setData] = useState([]);
-    console.log(data);
+    const {setData} = useContext(DataContext);
 
     useEffect(() => {
         const fetchData = () => {
@@ -25,7 +25,7 @@ export default function WelcomePage() {
         };
 
         fetchData();
-    }, []);
+    }, [setData]);
 
     return (
         <>

@@ -2,11 +2,17 @@ import { styled } from "styled-components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
 import HomePage from "./pages/HomePage/HomePage";
+import DataContext from "./contexts/DataContext";
+import { useState } from "react";
 
 function App() {
 
+  const [data, setData] = useState([]);
+  console.log(data);
+
   return (
-    <PagesContainer>
+    <DataContext.Provider value={{data, setData}}>
+          <PagesContainer>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<WelcomePage />}></Route>
@@ -14,6 +20,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </PagesContainer>
+    </DataContext.Provider>
   )
 }
 
