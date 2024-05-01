@@ -1,32 +1,17 @@
 import styled from "styled-components"
-import Logo from "../../assets/images/logomarca.png"
-import { FaFacebookSquare } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { TbBrandYoutube } from "react-icons/tb";
-import { Link } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 export default function HomePage() {
     return (
         <>
-            <Header>
-                <Link to="/">
-                    <img src={Logo} alt="Logo" />
-                </Link>
-            </Header>
+        <Header />
             <HomeContainer>
-                
+                <Title>
+                    <h1>Nossas <span>Soluções</span></h1>
+                </Title>
             </HomeContainer>
-            <Footer>
-                <a href="https://www.facebook.com/itworksfiscal/" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookSquare style={{ color: "#4db32b", fontSize: "30px" }} />
-                </a>
-                <a href="https://www.instagram.com/itworksoficial/" target="_blank" rel="noopener noreferrer">
-                    <BsInstagram style={{ color: "#4db32b", fontSize: "30px" }} />
-                </a>
-                <a href="https://www.youtube.com/@itworksoficial" target="_blank" rel="noopener noreferrer">
-                    <TbBrandYoutube style={{ color: "#4db32b", fontSize: "30px" }} />
-                </a>
-            </Footer>
+        <Footer />
         </>
     )
 }
@@ -39,30 +24,27 @@ export const HomeContainer = styled.div`
     align-items: center;
     justify-content: center;
 `
-
-const Header = styled.div`
-    background-color: #161616;
+const Title = styled.div`
+/*     background-color: blue; */
     width: 100%;
-    height: 90px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    height: 40px;
+    top: 140px;
+    position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
-    img{
-        width: 270px;
-        height: 80px;
+    h1{
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 450;
+        font-size: 30px;
+        letter-spacing: 0.09cap;
+        color: #afadad;
+    }
+    span{
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 450;
+        font-size: 30px;
+        letter-spacing: 0.09cap;
+        color: #5eb823;
     }
 `
 
-const Footer = styled.div`
-    background-color: #161618;
-    width: 100%;
-    height: 60px;
-    position: fixed; 
-    bottom: 0;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-`
