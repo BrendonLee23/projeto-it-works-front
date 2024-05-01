@@ -9,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<WelcomePage />}></Route>
+          {/* <Route path="/home" element={<HomePage />}></Route> */}
         </Routes>
       </BrowserRouter>
     </PagesContainer>
@@ -23,5 +24,5 @@ export const PagesContainer = styled.main`
   margin: 0 auto;
   background: rgba(240, 240, 240, 1);
   min-height: 100vh;
-  padding-bottom: 50px;
+/*   padding-bottom: 50px; */
 `
