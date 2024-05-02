@@ -4,7 +4,6 @@ import DataContext from "../../contexts/DataContext";
 import ServiceCard from "./ServiceCard/ServiceCard";
 
 export default function ServicesList() {
-
     const { data } = useContext(DataContext);
 
     return (
@@ -15,7 +14,7 @@ export default function ServicesList() {
                 ))}
             </Modules>
         </>
-    )
+    );
 }
 
 const Modules = styled.div`
@@ -35,4 +34,10 @@ const Modules = styled.div`
     }
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    
+    @media (max-width: 450px) {
+        flex-direction: column;
+        height: 100vh;
+        align-items: center
+    }
 `;

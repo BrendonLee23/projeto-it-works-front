@@ -48,8 +48,13 @@ export const HomeContainer = styled.div`
     height: calc(100vh - 150px); 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    gap:10px;
+    @media (max-width: 450px) {
+        gap:20px;
+    }
 `
 const Title = styled.div`
 /*     background-color: blue; */
@@ -57,19 +62,20 @@ const Title = styled.div`
     height: 40px;
     display: flex;
     justify-content: center;
-    h1{
+    h1 {
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
         font-weight: bold;
         font-size: 30px;
         letter-spacing: 0.09cap;
         color: #afadad;
     }
-    span{
+    span {
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
         font-weight: 400;
         font-size: 30px;
         letter-spacing: 0.09cap;
         color: #5eb823;
     }
-`
+`;
+
 
