@@ -20,30 +20,13 @@ export default function HomePage() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        let timer;
         const bringData = () => {
-            timer = setTimeout(() => {
-                if (loading) {
-                    Swal.fire({
-                        icon: 'warning',
-                        title: 'Demora na obtenção de dados',
-                        text: 'Os dados estão demorando para chegar. A aplicação será reiniciada.',
-                        confirmButtonText: 'OK'
-                    }).then((result) => {
-                        if (result.isConfirmed) {
-                            navigate('/');
-                        }
-                    });
-                }
-            }, 8000);
-
             axios.get(URL, {
                 headers: {
                     Authorization: authToken,
                 }
             })
                 .then(response => {
-                    clearTimeout(timer);
                     setData(response.data.body);
                     console.log("Dados obtidos com sucesso!");
                 })
@@ -65,9 +48,7 @@ export default function HomePage() {
                 });
         };
         bringData();
-
-        return () => clearTimeout(timer); 
-    }, [URL, authToken, navigate, setData, loading]);
+    }, [URL, authToken, navigate, setData]);
 
     return (
         <>
@@ -143,4 +124,4 @@ const LoadingSpinnerWrapper = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 400px; 
-`
+    `
