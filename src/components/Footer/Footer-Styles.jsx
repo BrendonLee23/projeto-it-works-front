@@ -16,6 +16,11 @@ export const FooterContainer = styled.div`
         flex-direction: column;
         height: 90px;
     }
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column;
+        height: 90px; 
+    }
     a:hover svg {
         filter: brightness(1.9); 
     }
@@ -31,6 +36,12 @@ export const FooterContainer = styled.div`
         position: relative;
         padding-left: 400px;
         @media (max-width: 450px) {
+        width: 300px;
+        padding-left: 0px;
+        position: absolute;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 700px) {
         width: 300px;
         padding-left: 0px;
         position: absolute;
@@ -52,6 +63,12 @@ export const FooterContainer = styled.div`
         margin-right:-20px;
         margin-left: 10px;
         margin-top: 40px;
+    }
+    @media (max-width: 700px) {
+        width: 300px;
+        padding-left: 0px;
+        margin-bottom: 30px;
+        margin-top: 70px;
     }
 }
 `

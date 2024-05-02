@@ -19,6 +19,10 @@ export const LogoImage = styled.img`
         width: 100%; 
         height: auto; 
     }
+    @media (max-width: 700px) {
+        width: 100%; 
+        height: auto; 
+    }
 
     &:hover {
         transform: scale(1.1); 
