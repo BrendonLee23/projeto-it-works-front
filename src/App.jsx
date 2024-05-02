@@ -1,9 +1,9 @@
-import { styled } from "styled-components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage/WelcomePage";
 import HomePage from "./pages/HomePage/HomePage";
 import DataContext from "./contexts/DataContext";
 import { useState } from "react";
+import { PagesContainer } from "./App-Styles";
 
 function App() {
 
@@ -24,12 +24,3 @@ function App() {
 }
 
 export default App
-
-
-export const PagesContainer = styled.main`
-  padding: 0 auto;
-  margin: 0 auto;
-  background: rgba(240, 240, 240, 1);
-  min-height: 100vh;
-/*   padding-bottom: 50px; */
-`
