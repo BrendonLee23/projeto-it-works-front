@@ -13,21 +13,23 @@ import { Oval } from 'react-loading-icons';
 export default function HomePage() {
 
     const { setData } = useContext(DataContext);
-    const { VITE_API_URL, VITE_AUTH_TOKEN } = import.meta.env;
+    const { VITE_API_URL,/*  VITE_AUTH_TOKEN  */} = import.meta.env;
     const URL = VITE_API_URL;
-    const authToken = VITE_AUTH_TOKEN
+/*     const authToken = VITE_AUTH_TOKEN */
     const navigate = useNavigate();
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const bringData = () => {
-            axios.get(URL, {
+            axios.get(URL
+                /* ,{
                 headers: {
                     Authorization: authToken,
                 }
-            })
+                } */
+        )
                 .then(response => {
-                    setData(response.data.body);
+                    setData(response.data);
                     console.log("Dados obtidos com sucesso!");
                 })
                 .catch(error => {
@@ -48,7 +50,7 @@ export default function HomePage() {
                 });
         };
         bringData();
-    }, [URL, authToken, navigate, setData]);
+    }, [URL,/*  authToken, */ navigate, setData]);
 
     return (
         <>
