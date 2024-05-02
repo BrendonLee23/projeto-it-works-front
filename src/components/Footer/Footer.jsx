@@ -7,15 +7,18 @@ export default function Footer() {
     return (
         <>
             <FooterContainer>
-                <a href="https://www.facebook.com/itworksfiscal/" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookSquare style={{ color: "#4db32b", fontSize: "30px" }} />
-                </a>
-                <a href="https://www.instagram.com/itworksoficial/" target="_blank" rel="noopener noreferrer">
-                    <BsInstagram style={{ color: "#4db32b", fontSize: "30px" }} />
-                </a>
-                <a href="https://www.youtube.com/@itworksoficial" target="_blank" rel="noopener noreferrer">
-                    <TbBrandYoutube style={{ color: "#4db32b", fontSize: "30px" }} />
-                </a>
+                <div>
+                    <a href="https://www.facebook.com/itworksfiscal/" target="_blank" rel="noopener noreferrer">
+                        <FaFacebookSquare style={{ color: "#4db32b", fontSize: "30px" }} />
+                    </a>
+                    <a href="https://www.instagram.com/itworksoficial/" target="_blank" rel="noopener noreferrer">
+                        <BsInstagram style={{ color: "#4db32b", fontSize: "30px" }} />
+                    </a>
+                    <a href="https://www.youtube.com/@itworksoficial" target="_blank" rel="noopener noreferrer">
+                        <TbBrandYoutube style={{ color: "#4db32b", fontSize: "30px" }} />
+                    </a>
+                </div>
+                <h1>Todos os direitos reservados. 2024.</h1>
             </FooterContainer>
         </>
     )

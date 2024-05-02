@@ -8,8 +8,12 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
-        width: 270px;
-        height: 80px;
+    img {
+    width: 270px;
+    height: 80px;
+    transition: transform 0.2s ease; 
+    }
+    img:hover {
+        transform: scale(1.02); 
     }
 `
