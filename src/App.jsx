@@ -8,7 +8,6 @@ import { useState } from "react";
 function App() {
 
   const [data, setData] = useState([]);
-  console.log(data);
 
   return (
     <DataContext.Provider value={{data, setData}}>
