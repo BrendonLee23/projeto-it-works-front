@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Modules = styled.div`
     width: 100%;
-    height: 400px;
+    height: 600px;
     position: relative;
     padding: 20px 20px 10px 20px;
     display: flex;
     justify-content: flex-start; 
-    flex-wrap: nowrap; 
-    gap: 20px;
+    flex-wrap: wrap; 
+    gap: 15px;
     overflow-x: auto; 
     scrollbar-width: none; 
     -ms-overflow-style: none; 

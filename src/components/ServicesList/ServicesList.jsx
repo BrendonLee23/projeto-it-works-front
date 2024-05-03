@@ -3,8 +3,10 @@ import DataContext from "../../contexts/DataContext";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import { Modules } from "./ServicesList-Styles";
 
+
 export default function ServicesList() {
     const { data } = useContext(DataContext);
+
 
     return (
         <>
@@ -16,4 +18,3 @@ export default function ServicesList() {
         </>
     );
 }
-

@@ -30,8 +30,8 @@ export const Text = styled.div`
 `;
 
 export const CardService = styled.div`
-    width: 260px;
-    height: ${props => props.showMore ? '400px' : '300px'};
+    width: 250px;
+    height:280px;
     border-radius: 8px;
     margin-bottom: 20px;
     background-color: #6e6a6a;
@@ -44,7 +44,7 @@ export const CardService = styled.div`
 `;
 
 export const HeaderCard = styled.div`
-    width: 260px;
+    width: 250px;
     height: 50px;
     background-color: #2f302e;
     border-top-right-radius: 7px;

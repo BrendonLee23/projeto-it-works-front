@@ -7,15 +7,14 @@ import ServicesList from "../../components/ServicesList/ServicesList";
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
 import { Oval } from 'react-loading-icons';
-import { HomeContainer, LoadingSpinnerWrapper, Title } from "./HomePage-Styles";
-
+import {  HomeContainer, LoadingSpinnerWrapper, Title } from "./HomePage-Styles";
 
 export default function HomePage() {
 
     const { setData } = useContext(DataContext);
-    const { VITE_API_URL,/*  VITE_AUTH_TOKEN  */} = import.meta.env;
+    const { VITE_API_URL,/*  VITE_AUTH_TOKEN  */ } = import.meta.env;
     const URL = VITE_API_URL;
-/*     const authToken = VITE_AUTH_TOKEN */
+    /*     const authToken = VITE_AUTH_TOKEN */
     const navigate = useNavigate();
     const [loading, setLoading] = useState(true);
 
@@ -27,7 +26,7 @@ export default function HomePage() {
                     Authorization: authToken,
                 }
                 } */
-        )
+            )
                 .then(response => {
                     setData(response.data);
                     console.log("Dados obtidos com sucesso!");
@@ -78,8 +77,10 @@ export default function HomePage() {
                 ) : (
                     <ServicesList />
                 )}
+
             </HomeContainer>
             <Footer />
         </>
     )
 }
+
