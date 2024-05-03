@@ -23,7 +23,7 @@ export default function ServiceCard({ service, onClick }) {
     }, [service.subModulos]);
 
     return (
-        <CardService onClick={onClick}> {/* Adicionando onClick ao CardService */}
+        <CardService onClick={onClick}> 
             <HeaderCard>
                 <h1>{service.Descricao}</h1>
             </HeaderCard>
