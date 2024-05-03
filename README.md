@@ -42,6 +42,7 @@ Este projeto é uma aplicação front-end desenvolvida em React com Vite, destin
 # Motivação 
 
 Minha motivação foi desenvolver uma tabela de dados eficiente que exibe informações dinâmicas dos serviços, permitindo uma busca específica, detalhando os dados do serviço, para melhorar a experiência do usuário. Isso não apenas torna a aplicação mais eficiente, mas também oferece uma interação intuitiva e facilita a localização rápida de informações relevantes, contribuindo para uma experiência de usuário mais satisfatória.
+Além de utilizar tecnologias de ponta na aplicação, torná-la responsiva, tratamento de erros, utilizar cores com tons agradáveis, tive um cuidado ao permitir que o usuário possa acessar mais informações relacionadas a empresa e se informando ainda mais sobre os serviços abordados e muito mais.
 
 # Tecnologias Utilizadas
 Para este projeto foram utilizadas:
