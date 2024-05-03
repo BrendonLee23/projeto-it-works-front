@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HomeContainer = styled.div`
     background: linear-gradient(to bottom, #222222, #000000);
     width: 100%;
-    height: calc(100vh - 150px); 
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
