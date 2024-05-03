@@ -40,7 +40,9 @@ export const CardService = styled.div`
     transition: transform 0.3s ease; 
 
     &:hover {
-        transform: scale(1.04);
+        @media (min-width: 501px) {
+            transform: scale(1.04);
+        }
     }
 
     @media (max-width: 500px) {
