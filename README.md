@@ -32,10 +32,46 @@ Este projeto é uma aplicação front-end desenvolvida em React com Vite, destin
 ![Modal Web](src/assets/images/modalmobile.jpeg)
 
 
+#### Rodapé Interativo - Links de Pesquisa
+- Possui os links das redes sociais fixados no rodapé;
+- Ao clicar, o usuário navega diretamente para a rede social destino sem interromper o funcionamento da aplicação;
+- Em caso de falha é exibido um alerta informando o erro para o usuário;
+
+![mobile1](src/assets/images/rodape.jpeg)
+
+# Motivação 
+
+Minha motivação foi desenvolver uma tabela de dados eficiente que exibe informações dinâmicas dos serviços, permitindo uma busca específica, detalhando os dados do serviço, para melhorar a experiência do usuário. Isso não apenas torna a aplicação mais eficiente, mas também oferece uma interação intuitiva e facilita a localização rápida de informações relevantes, contribuindo para uma experiência de usuário mais satisfatória.
+
+# Tecnologias Utilizadas
+Para este projeto foram utilizadas:
+
+  - React;
+  - Vite;
+  - Axios;
+  - Eslint;
+  - Styled Components;
+  - Sweet Alerts;
+  - React Router;
+  - DotEnv;
+  - React Icons;
+  - React Load Spinner;
 
 
-Currently, two official plugins are available:
+# Como rodar em desenvolvimento
+Para executar este projeto em desenvolvimento é necessário seguir os passos abaixo:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# projeto-it-works-front
+- Clonar o repositório ;
+- Baixar as dependências necessárias com o comando: npm install;
+- Para rodar o projeto em desenvolvimento, execute o comando npm run dev.
+
+# Como Obter os dados da API Json Server
+Para acessar os dados dinâmicos, realizei o deploy da API que compartilha as informações dos módulos de serviços:
+
+- Crie um arquivo .env na pasta raiz do seu projeto;
+- Crie uma variável de ambiente e adicione o link do deploy da API:   VITE_API_URL= (link do deploy)
+- Como no exemplo, adicione o seguinte link do local informado: https://json-api-it-works.vercel.app/modulos
+
+---
+
+#### Uma ótima experiência para todos!!! 
