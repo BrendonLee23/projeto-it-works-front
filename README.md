@@ -4,8 +4,7 @@ A aplicação frontend é construída com React, utilizando Vite como ferramenta
 # Versão Demo - Deploy 
 [Link do projeto]([https://projeto-it-works-front.vercel.app/])
 
-Capa Web
-![Descrição da imagem](src/assets/images/6a20d015-7bd1-4f08-8dd3-eeeb546b16c7.jpeg)
+![Capa Web](src/assets/images/6a20d015-7bd1-4f08-8dd3-eeeb546b16c7.jpeg)
 
 
 # Como funciona?
@@ -17,8 +16,20 @@ Este projeto é uma aplicação front-end desenvolvida em React com Vite, destin
 - Em caso de falha na busca de dados, é exibido um alerta informando o erro para o usuário;
 - Os dados exibidos são: Nome do Serviço e uma lista com os benefícios de contratação do mesmo;
 
-Menu Web
-![Descrição da imagem](src/assets/images/homepage.jpeg)
+![Menu Web](src/assets/images/homepage.jpeg)
+
+
+![Menu Mobile](src/assets/images/homemobile.jpeg)
+
+#### Seleção de Serviço - Descrição específica
+- Ao Selecionar um serviço é possível ter um foco maior no benefícios que o acompanham;
+- Se o usuário se interessar em saber mais, pode clicar no botão presente na tabela e navegar pelo site oficial da It Works;
+- Em caso de falha é exibido um alerta informando o erro para o usuário;
+
+![Modal Web](src/assets/images/modal.jpeg)
+
+
+![Modal Web](src/assets/images/modalmobile.jpeg)
 
 
 
