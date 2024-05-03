@@ -1,6 +1,17 @@
-# React + Vite
+# Projeto It Works Front End
+A aplicação frontend é construída com React, utilizando Vite como ferramenta de desenvolvimento. Renderiza os dados de uma API JSON, apresentando informações detalhadas sobre os módulos e submódulos de serviços da empresa de forma organizada e acessível aos usuários. Possuindo uma opção de descrição detalhada ao interagir com o serviço específico.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Versão Demo - Deploy 
+[Link do projeto]([https://projeto-it-works-front.vercel.app/])
+
+![Descrição da imagem](src/assets/images/6a20d015-7bd1-4f08-8dd3-eeeb546b16c7.jpeg)
+
+![Descrição da imagem](src/assets/images/homepage.jpeg)
+
+
+
+
+
 
 Currently, two official plugins are available:
 
