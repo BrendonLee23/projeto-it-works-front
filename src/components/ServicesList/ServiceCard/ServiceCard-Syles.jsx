@@ -31,20 +31,24 @@ export const Text = styled.div`
 
 export const CardService = styled.div`
     width: 250px;
-    height:280px;
+    height: 280px;
     border-radius: 8px;
     margin-bottom: 20px;
     background-color: #6e6a6a;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease; 
+
     &:hover {
-        transform: scale(1.04); 
+        transform: scale(1.04);
     }
+
     @media (max-width: 500px) {
         height: auto;
+        transition: none; 
     }
 `;
+
 
 export const HeaderCard = styled.div`
     width: 250px;
