@@ -3,18 +3,19 @@ import { useEffect, useState } from "react";
 import PropTypes from 'prop-types'; 
 import { CardService, Description, HeaderCard, Text } from "./ServiceCard-Syles";
 
-export default function ServiceCard({ service }) {
-    ServiceCard.propTypes = {
-        service: PropTypes.shape({
-            Descricao: PropTypes.string.isRequired, 
-            subModulos: PropTypes.arrayOf(
-                PropTypes.shape({
-                    Descricao: PropTypes.string.isRequired,
-                })
-            ).isRequired,
-        }).isRequired,
-    };
+ServiceCard.propTypes = {
+    service: PropTypes.shape({
+        Descricao: PropTypes.string.isRequired, 
+        subModulos: PropTypes.arrayOf(
+            PropTypes.shape({
+                Descricao: PropTypes.string.isRequired,
+            })
+        ).isRequired,
+    }).isRequired,
+    onClick: PropTypes.func.isRequired, // Adicionando onClick como uma propriedade requerida
+};
 
+export default function ServiceCard({ service, onClick }) {
     const [itens, setItens] = useState([]);
 
     useEffect(() => {
@@ -22,7 +23,7 @@ export default function ServiceCard({ service }) {
     }, [service.subModulos]);
 
     return (
-        <CardService>
+        <CardService onClick={onClick}> {/* Adicionando onClick ao CardService */}
             <HeaderCard>
                 <h1>{service.Descricao}</h1>
             </HeaderCard>
@@ -37,4 +38,3 @@ export default function ServiceCard({ service }) {
         </CardService>
     );
 }
-

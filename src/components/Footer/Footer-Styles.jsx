@@ -34,8 +34,8 @@ export const FooterContainer = styled.div`
         justify-content: center;
         gap: 40px;
         position: relative;
-        padding-left: 400px;
-        @media (max-width: 450px) {
+        padding-left: 370px;
+    @media (max-width: 450px) {
         width: 300px;
         padding-left: 0px;
         position: absolute;

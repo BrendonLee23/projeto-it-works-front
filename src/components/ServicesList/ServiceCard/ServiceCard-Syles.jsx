@@ -41,6 +41,9 @@ export const CardService = styled.div`
     &:hover {
         transform: scale(1.04); 
     }
+    @media (max-width: 500px) {
+        height: auto;
+    }
 `;
 
 export const HeaderCard = styled.div`
